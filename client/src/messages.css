@@ -1,0 +1,58 @@
+.message-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.messages-container {
+  background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg');
+
+  padding: 10px;
+  border: 5px solid black; /* Add black bold borders */
+  border-radius: 5px;
+  height: calc(100vh - 40px); /* Subtract header and footer heights */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children vertically */
+  overflow: auto; /* Add overflow to allow scrolling if content exceeds container height */
+  font-family: Arial, sans-serif; /* Example font family for messages */
+
+}
+
+.chat-container {
+  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+
+  padding: 10px;
+  border: 5px solid black; /* Add black bold borders */
+  border-radius: 5px;
+  height: calc(100vh - 40px); /* Subtract header and footer heights */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children vertically */
+  overflow: auto; /* Add overflow to allow scrolling if content exceeds container height */
+  font-family: Arial, sans-serif; /* Example font family for messages */
+
+}
+
+.messages h2,
+.messages h3,
+.messages ul,
+.messages input,
+.messages button {
+  font-family: Arial, sans-serif; /* Apply the same font family to headings, list, input, and button */
+}
+
+.friends ul {
+  font-family: Arial, sans-serif; /* Apply the font family to the friends list */
+}
+
+  .message-list li {
+    padding: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .message-list li.sent {
+    text-align: right;
+  }
+  
+  .message-list li.received {
+    text-align: left;
+  }
+  

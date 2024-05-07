@@ -1,0 +1,144 @@
+.post {
+  border: 4px solid #007bff;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  background-color: aliceblue;
+
+}
+
+
+
+.feed-container {
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+
+/* Add some spacing between components */
+.feed-container .component {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  border-bottom: 3px solid #0a0909; /* Add border between sections */
+  padding-bottom: 20px; /* Add padding between sections */
+}
+
+.post-list {
+  padding-top: 0px;
+  flex-grow: 1; /* Allow the post list to grow and occupy remaining space */
+}
+.author-name {
+  font-weight: bold; /* Make the author's name bold */
+  margin-bottom: 5px; /* Add some space between the author's name and the content */
+}
+
+
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.like-button,
+.share-button,
+.comment-button,
+.interest-button,
+.post-button {
+  width: auto;
+  margin-right: 5px; /* Add some margin between the buttons */
+  font-size: 14px; /* Adjust the font size to make them smaller */
+  border: none;
+  border-radius: 5px;
+  background-color: #000; /* Set button background color to black */
+  color: #fff; /* Set text color to white */
+  cursor: pointer;
+  padding: 8px 20px;
+}
+
+.like-button:hover,
+.share-button:hover,
+.comment-button:hover {
+  background-color: #444; /* Darken button color on hover */
+}
+
+/* feed.css */
+.post-input-section {
+  margin-bottom: 20px;
+}
+
+.post-input-section textarea,
+.post-input-section input[type="text"],
+.post-input-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.post-input-section textarea:focus,
+.post-input-section input[type="text"]:focus,
+.post-input-section select:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+.post-input-section input[type="file"] {
+  display: none; /* Hide the file input */
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #007bb5;
+}
+
+.image-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* Adjust the layout for the file upload */
+.input-container {
+  display: flex;
+  align-items: center;
+
+}
+
+/* feed.css */
+.upload-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.upload-text {
+  margin-right: 10px;
+}

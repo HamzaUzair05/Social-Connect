@@ -1,0 +1,80 @@
+/* App.css */
+
+/* Shared styles */
+body {
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.pinimg.com/736x/b2/e4/a7/b2e4a72383a503aa7d3a90f67df11b25.jpg');
+
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px; /* Adjust font size */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #010508;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Signup page */
+.signup-page {
+  background-image: url('https://suwaneemagazine.com/wp-content/uploads/2022/05/SuwMag-0384-May-June-featured-images9.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login page */
+.login-page {
+  background-image: url('https://suwaneemagazine.com/wp-content/uploads/2022/05/SuwMag-0384-May-June-featured-images9.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-page p,
+.login-page p {
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Add margin to separate from the form */
+  text-align: center; /* Center the text */
+}
