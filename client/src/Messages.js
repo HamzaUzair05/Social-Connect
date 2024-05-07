@@ -87,18 +87,20 @@ function Messages({ username }) {
         <div className='chat-container'>
           <h3>Chat with {selectedFriend}:</h3>
           <ul className="message-list">
-            {messages.map((message, index) => (
-              <li key={index} className={message.sender === username ? "sent" : "received"}>
-                 {message.content}
-              </li>
-            ))}
-          </ul>
+  {messages.map((message, index) => (
+    <li key={index} className={message.sender === username ? "sent" : "received"}>
+      <div className={message.sender === username ? "sent-message" : "received-message"}>
+        {message.content}
+      </div>
+    </li>
+  ))}
+</ul>
+
 
           <input type="text" placeholder="Type your message..." value={messageContent} onChange={(e) => setMessageContent(e.target.value)} />
           <button onClick={() => sendMessage(messageContent)}>Send</button>
           <button onClick={deleteChat}>Delete Chat</button>
-
-        </div>
+            </div>
       )}
     </div>
     </div>

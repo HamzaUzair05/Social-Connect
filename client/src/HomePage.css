@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: cover;
+  background-image: url('https://img.freepik.com/premium-photo/grey-background-with-texture_979387-1121.jpg');
 
 }
 
@@ -58,7 +59,6 @@ body {
 .home-container {
   display: flex;
   justify-content: space-between;
-  border: 2px solid black; /* Add black bold borders */
   border-radius: 5px;
   height: calc(100vh - 80px); /* Subtract header and footer heights */
   padding-bottom: 10px; /* Add padding at the bottom to avoid overlapping with the footer */
